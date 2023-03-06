@@ -12,6 +12,7 @@ const Exercise9 = () => {
         const fetch = async () => {
             const res = axios.get("https://random-data-api.com/api/users/random_user?size=10").then((data) => {
                 console.log("data", res)
+                console.log("data", data.data)
                 setPosts(data.data)
             })
         }
@@ -28,7 +29,7 @@ const Exercise9 = () => {
 
         {posts.map((post, index) => {
                 return (
-                    <FlipCard key={index} image={post.avatar} alt="Imag"/>
+                    <FlipCard key={index} image={post.avatar} alt="Imag" employment={post.employment.title}/>
                 )
             })}
 

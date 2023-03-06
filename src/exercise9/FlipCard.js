@@ -18,7 +18,7 @@ const FlipCard = ({image, first_name, last_name, employment}) => {
             <div onClick={() => handleClick()}>
                
 
-                <p>{employment}</p>
+                <p className="">{employment}</p>
 
             </div>
 

@@ -13,8 +13,8 @@ import './index.css'
 function App() {
   return (
     <>
-      <section className="px-20 relative flex flex-col gap-10 mb-44">
-        <header className="fixed py-5 top-0 z-50 bg-white">
+      <section className="px-20 relative flex flex-col gap-10 mb-44 w-full">
+        <header className="fixed py-5 top-0 z-50 bg-white w-full">
           <nav>
             <ul className="flex gap-10">
               <Link activeClass="active" smooth spy to="ex1">
@@ -49,7 +49,7 @@ function App() {
         </header>
 
         <section className="flex flex-col ">
-          <section id="ex1" className="h-[40vh] py-44 border border-b px-10">
+          <section id="ex1" className="h-[40vh] mt-44 py-44 border border-b px-10 bg-yellow-500 text-white font-bold text-xl grid place-content-center">
             <h1>Exercise 1:</h1>
             <Exercise1 />
           </section>
@@ -71,7 +71,7 @@ function App() {
           <section id="ex7" className="py-44 border border-b px-10">
             <Exercise7 />
           </section>
-          <section id="ex8" className="py-44 border border-b px-10">
+          <section id="ex8" className="py-44 border border-b px-10 bg-green-400">
             <Exercise8 />
           </section>
           <section id="ex9" className="py-44 border border-b px-10">

@@ -3,7 +3,7 @@ const Exercise1 = () => {
     return ( 
         <>
 
-        <section >
+        <section>
         <h1>Hello World</h1>
 
         </section>

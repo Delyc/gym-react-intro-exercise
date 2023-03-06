@@ -1,19 +1,7 @@
 import Button from "./Button";
 
 const Exercise3 = () => {
-    const buttons = [
-        {
-            text: "button 1",
-
-        }, {
-            text: "button 2",
-
-        }, {
-            text: "button 3",
-
-        },
-
-    ]
+    const buttons = [ "button 1", "button 2", "button 3"]
 
     const handleClick = (index) => {
         let clickedButton = index + 1
@@ -24,7 +12,7 @@ const Exercise3 = () => {
             <section>
                 {buttons.map((button, index) => {
                     return (
-                        <Button key={index} text={button.text} handleClick={() => handleClick(index)} />
+                        <Button key={index} text={button} handleClick={() => handleClick(index)} />
                     )
                 })}
             </section>

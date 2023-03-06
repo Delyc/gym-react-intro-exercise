@@ -10,7 +10,8 @@ const Exercise7 = () => {
     const handleChangeSecond = (e) => {
         setLastName(e.target.value)
     }
-    const greetMe = () => {
+    const greetMe = (e) => {
+        e.preventDefault()
         alert(`Hello ${firstName} ${lastName}` )
     }
     return ( 

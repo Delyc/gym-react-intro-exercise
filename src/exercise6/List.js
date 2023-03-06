@@ -1,7 +1,7 @@
-const List = ({value}) => {
+const List = ({icon, value}) => {
     return ( 
         <>
-        <li>{value}</li>
+        <p className="border border-gray-500 py-2 px-5 flex gap-2">{icon}{value}</p>
         </>
      );
 }

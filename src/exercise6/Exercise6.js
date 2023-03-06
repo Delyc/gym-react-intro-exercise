@@ -1,18 +1,43 @@
 import List from "./List";
 
 const Exercise6 = () => {
-    const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
+    const animals =  [
+        {
+            icon: "😀",
+            text: "dog"
+        },
+        {
+            icon: "😎",
+            text: "cat"
+        },
+        {
+            icon: "😣",
+            text: "chicken"
+        },
+        {
+            icon: "😶",
+            text: "cow"
+        },
+        {
+            icon: "😫",
+            text: "sheep"
+        },
+        {
+            icon: "🤐",
+            text: "horse"
+        },
+    ] 
 
     return ( 
         <>
-        <ul>
+        <div className="flex flex-col gap-0">
             {animals.map((animal, index) => {
                 return(
-                    <List value={animal} key={index}/>
+                    <List icon={animal.icon} value={animal.text} key={index}/>
                 )
             })
             }
-        </ul>
+        </div>
         </>
      );
 }

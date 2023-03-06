@@ -6,34 +6,29 @@ import FlipCard from "./FlipCard";
 
 const Exercise9 = () => {
     const [posts, setPosts] = useState([])
+    const fetchRandom = () => {
+        axios.get("https://random-data-api.com/api/users/random_user?size=10").then(({data}) => {
+                setPosts(data)
+            })
 
+    }
     useEffect(() => {
         const fetch = async () => {
-            const res = axios.get("https://random-data-api.com/api/users/random_user?size=10").then((data) => {
-                console.log("data", res)
-                console.log("data", data.data)
-                setPosts(data.data)
-            })
+            await fetchRandom()
         }
         fetch()
     }, [])
 
-
-    // console.log("data", data)
-
     return (
         <>
-        <Button text="Fetch random" />
-        <div className="grid grid-cols-3 gap-10 px-44">
-
-        {posts.map((post, index) => {
-                return (
-                    <FlipCard key={index} image={post.avatar} alt="Imag" employment={post.employment.title}/>
-                )
-            })}
-
-        </div>
-            
+            <Button text="Fetch random" handleClick={fetchRandom}/>
+            <div className="grid grid-cols-3 gap-10 px-44">
+                {posts.map((post, index) => {
+                    return (
+                        <FlipCard key={index} image={post.avatar} alt="Imag" employment={post.employment.title} first_name={post.first_name} />
+                    )
+                })}
+            </div>
         </>
     );
 }

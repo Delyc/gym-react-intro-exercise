@@ -17,96 +17,67 @@ function App() {
         <header className="fixed py-5 top-0 z-50 bg-white">
           <nav>
             <ul className="flex gap-10">
-              <li>
-                <Link activeClass="active" smooth spy to="ex1">
-                  Exercise1
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex2">
-                  Exercise2
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex3">
-                  Exercise3
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex4">
-                  Exercise4
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex5">
-                  Exercise5
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex6">
-                  Exercise6
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex7">
-                  Exercise7
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex8">
-                  Exercise8
-                </Link>
-              </li>
-              <li>
-                <Link activeClass="active" smooth spy to="ex9">
-                  Exercise9
-                </Link>
-              </li>
-
+              <Link activeClass="active" smooth spy to="ex1">
+                Exercise1
+              </Link>
+              <Link activeClass="active" smooth spy to="ex2">
+                Exercise2
+              </Link>
+              <Link activeClass="active" smooth spy to="ex3">
+                Exercise3
+              </Link>
+              <Link activeClass="active" smooth spy to="ex4">
+                Exercise4
+              </Link>
+              <Link activeClass="active" smooth spy to="ex5">
+                Exercise5
+              </Link>
+              <Link activeClass="active" smooth spy to="ex6">
+                Exercise6
+              </Link>
+              <Link activeClass="active" smooth spy to="ex7">
+                Exercise7
+              </Link>
+              <Link activeClass="active" smooth spy to="ex8">
+                Exercise8
+              </Link>
+              <Link activeClass="active" smooth spy to="ex9">
+                Exercise9
+              </Link>
             </ul>
           </nav>
         </header>
 
         <section className="flex flex-col ">
-
-        <section id="ex1" className="h-[40vh] py-44 border border-b px-10">
-          <h1>Exercise 1:</h1>
-          <Exercise1 />
-
+          <section id="ex1" className="h-[40vh] py-44 border border-b px-10">
+            <h1>Exercise 1:</h1>
+            <Exercise1 />
+          </section>
+          <section id="ex2" className="py-44 border border-b px-10">
+            <Exercise2 />
+          </section>
+          <section id="ex3" className="py-44 border border-b px-10">
+            <Exercise3 />
+          </section>
+          <section id="ex4" className="py-44 border border-b px-10">
+            <Exercise4 />
+          </section>
+          <section id="ex5" className="py-44 border border-b px-10">
+            <Exercise5 />
+          </section>
+          <section id="ex6" className="py-44 border border-b px-10">
+            <Exercise6 />
+          </section>
+          <section id="ex7" className="py-44 border border-b px-10">
+            <Exercise7 />
+          </section>
+          <section id="ex8" className="py-44 border border-b px-10">
+            <Exercise8 />
+          </section>
+          <section id="ex9" className="py-44 border border-b px-10">
+            <Exercise9 />
+          </section>
         </section>
-        <section id="ex2" className="py-44 border border-b px-10">
-          <Exercise2 />
-
-        </section>
-        <section id="ex3" className="py-44 border border-b px-10">
-          <Exercise3 />
-
-        </section>
-        <section id="ex4" className="py-44 border border-b px-10">
-          <Exercise4 />
-
-        </section>
-        <section id="ex5" className="py-44 border border-b px-10">
-          <Exercise5 />
-
-        </section>
-        <section id="ex6" className="py-44 border border-b px-10">
-          <Exercise6 />
-
-        </section>
-        <section id="ex7" className="py-44 border border-b px-10">
-          <Exercise7 />
-
-        </section>
-        <section id="ex8" className="py-44 border border-b px-10">
-          <Exercise8 />
-
-        </section>
-        <section id="ex9" className="py-44 border border-b px-10">
-          <Exercise9 />
-
-        </section>
-      </section>
       </section>
     </>
 

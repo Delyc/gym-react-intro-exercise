@@ -11,7 +11,7 @@ const FlipCard = ({image, first_name, last_name, employment}) => {
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal" className="bg-red-500">
             <div onMouseEnter={() => handleClick()}
                 onMouseLeave={() => handleClick()}>
-                <img src={image} />
+                <img src={image} alt= "Image"/>
                 <p>{first_name}</p>
                 <p>{last_name}</p>
             </div>

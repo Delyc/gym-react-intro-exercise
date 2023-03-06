@@ -11,7 +11,7 @@ const Exercise9 = () => {
     useEffect(() => {
         const fetch = async () => {
             const res = axios.get("https://random-data-api.com/api/users/random_user?size=10").then((data) => {
-                console.log("data", data.data)
+                console.log("data", res)
                 setPosts(data.data)
             })
         }
@@ -29,7 +29,7 @@ const Exercise9 = () => {
 
         {posts.map((post, index) => {
                 return (
-                    <FlipCard key={index} image={post.avatar} alt="Image"/>
+                    <FlipCard key={index} image={post.avatar} alt="Imag"/>
                 )
             })}
 

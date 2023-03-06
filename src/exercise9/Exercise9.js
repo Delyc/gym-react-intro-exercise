@@ -29,7 +29,7 @@ const Exercise9 = () => {
 
         {posts.map((post, index) => {
                 return (
-                    <FlipCard key={index} image={post.avatar}/>
+                    <FlipCard key={index} image={post.avatar} alt="Image"/>
                 )
             })}
 

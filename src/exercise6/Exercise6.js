@@ -6,7 +6,6 @@ const Exercise6 = () => {
 
     return ( 
         <>
-        <Home />
         <ul>
             {animals.map((animal, index) => {
                 return(

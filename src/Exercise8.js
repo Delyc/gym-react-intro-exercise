@@ -16,7 +16,6 @@ const Exercise8 = () => {
     return ( 
         <>
 
-        <Home />
         <div className="flex gap-20 py-20 px-44">
         {posts.map((post, index) => {
             return(

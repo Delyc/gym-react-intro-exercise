@@ -22,12 +22,13 @@ const Exercise3 = () => {
     }
     return (
         <>
-        <Home />
-            {buttons.map((button, index) => {
-                return (
-                    <Button key={index} text={button.text} handleClick={()=>handleClick(index)}/>
-                )
-            })}
+            <section>
+                {buttons.map((button, index) => {
+                    return (
+                        <Button key={index} text={button.text} handleClick={() => handleClick(index)} />
+                    )
+                })}
+            </section>
         </>
     );
 }

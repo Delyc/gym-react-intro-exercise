@@ -23,7 +23,6 @@ const Exercise9 = () => {
 
     return (
         <>
-        <Home />
         <Button text="Fetch random" />
         <div className="grid grid-cols-3 gap-10 px-44">
 

@@ -8,9 +8,10 @@ const Exercise4 = () => {
     }
     return ( 
         <>
-        <Home />
+        <section >
         <p>Button has been clicked: {counter} times</p>
         <Button handleClick={handleCount} text="click me" />
+        </section>
     
         </>
      );

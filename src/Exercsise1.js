@@ -3,8 +3,11 @@ import Home from "./Home";
 const Exercise1 = () => {
     return ( 
         <>
-        <Home />
+
+        <section >
         <h1>Hello World</h1>
+
+        </section>
 
         </>
      );

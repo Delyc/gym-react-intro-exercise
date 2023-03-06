@@ -16,7 +16,6 @@ const Exercise7 = () => {
     }
     return ( 
         <>
-        <Home />
         <form className="flex flex-col gap-3 w-80">
             <input className="outline-none border border-gray-100 py-2 px-10 rounded" placeholder="Fist Name" onChange={handleChange}/>
             <input className="outline-none border border-gray-100 py-2 px-10 rounded" placeholder="Second Name" onChange={handleChangeSecond}/>

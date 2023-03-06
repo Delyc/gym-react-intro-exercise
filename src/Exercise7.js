@@ -1,6 +1,5 @@
 import Button from "./Exercise3/Button";
 import { useState } from "react";
-import Home from "./Home";
 const Exercise7 = () => {
     const [firstName, setFirstName] = useState()
     const handleChange = (e) => {

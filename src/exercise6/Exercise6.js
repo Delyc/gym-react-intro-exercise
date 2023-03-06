@@ -1,4 +1,3 @@
-import Home from "../Home";
 import List from "./List";
 
 const Exercise6 = () => {

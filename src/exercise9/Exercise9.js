@@ -2,7 +2,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Button from "../Exercise3/Button";
-import Home from "../Home";
 import FlipCard from "./FlipCard";
 
 const Exercise9 = () => {

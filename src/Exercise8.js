@@ -1,4 +1,3 @@
-import Home from "./Home";
 
 const Exercise8 = () => {
     const posts = [

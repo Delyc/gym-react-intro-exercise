@@ -1,4 +1,3 @@
-import Home from "./Home";
 const Exercise5 = () => {
     const animals = ['dog', 'cat', 'chicken', 'cow', 'sheep', 'horse']
     return ( 
